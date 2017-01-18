@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-list>
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="userName"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+</ion-list>
+<div padding>
+  <button ion-button round (click)="logEvent($event)">Sign In</button>  
+  <button ion-button round color="light">Cancel</button>  
+</div>
+<div padding> 
+  <button ion-button round>New User</button>  
+</div>
+</ion-content>
